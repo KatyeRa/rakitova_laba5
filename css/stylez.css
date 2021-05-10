@@ -21,26 +21,62 @@ body{
     overflow-x: hidden;
 }
 
-h1, h2, h3, h4, h5, h6, span, p, button, a, div {
-    margin: 0;
-    color: var(--dark);
-}
 .news__title{
   display: flex;
+  flex-direction: column;
   align-items: center;
 }
 .news__h1{
   font-family: 'Cormorant Garamond';
+  font-size: 22px;
+
 }
 .news__h2{
   font-family: 'Rubil';
+  color: var(--darkgreen);
+  font-size: 17px;
+  font-weight: normal;
 }
 .news__vacancy{
   font-family: 'Rubik';
+  font-weight: normal;
+
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+
   padding: 20px;
   border: 1px solid var(--grey);
   border-radius: 10px;
+  width: auto;
+
+  margin: 10px 10px;
+}
+.news__h3{
+  color: var(--lightgreen);
+}
+.news__h4{
+  font-size: 14px;
+  color: var(--grey);
+  font-weight: normal;
+}
+.news__h5{
+  font-weight: normal;
+}
+.news__media{
+  display: none;
+}
+@media (min-width: 375px) {
+  .news__title{
+    display: flex;
+    justify-content: ;
+  }
+  .news__media{
+    display: block;
+  }
+  .news_adaptive{
+    display: flex;
+    justify-content: space-between;
+
+  }
 }
